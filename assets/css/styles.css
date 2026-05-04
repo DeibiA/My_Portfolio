@@ -1,0 +1,17 @@
+:root {
+  --dark:    #0a0a0a;
+  --dark2:   #111111;
+  --dark3:   #1a1a1a;
+  --light:   #f4f3ef;
+  --light2:  #e8e7e2;
+  --white:   #fafaf8;
+  --accent:  #e8ff47;
+  --accent2: #47ffe8;
+  --muted:   #555550;
+  --muted2:  #888882;
+  --border-d: rgba(255,255,255,0.08);
+  --border-l: rgba(0,0,0,0.1);
+  --syne:    'Syne', sans-serif;
+  --mono:    'DM Mono', monospace;
+  --switzer: 'Switzer', sans-serif;
+}

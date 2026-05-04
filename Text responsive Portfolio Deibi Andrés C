@@ -1,0 +1,111 @@
+————— HEADER & NAV —————
+.nav__logo 
+<span> class="nav__first-name</span>
+<span> class="nav__last-name</span>
+
+.nav__link 
+#about
+#project
+#contact
+
+.nav__btn
+disponível ✦
+
+————— HOME SECTION —————
+
+.main 
+——— front-end developer
+<span> class="home__first-name</span>
+<span> class="home__last-name</span>
+
+.home__description"
+Criando interfaces web modernas e elegantes.<br>
+Cada pixel com intenção, cada interação com propósito.
+
+home__cta
+ver projetos →
+
+.home__scroll
+scroll
+
+.status__bar
+<strong>Status</strong>
+<span>
+    — disponível para freela
+</span>
+
+<strong>Localização</strong>
+<span>
+    — Brasil
+</span>
+<strong>Foco</strong>
+<span>
+    — front-end development
+</span>
+<strong>Stack</strong>
+<span>
+    — HTML · CSS · JavaScript
+</span>
+
+————— About —————
+.about 
+sobre_mim
+
+<h2>
+    Construindo minha jornada no front-end
+</h2>
+
+<p> 
+    Desenvolvedor front-end iniciante com foco em criar experiências digitais que combinam estética e funcionalidade.
+</p>
+
+<p>
+    Cada projeto é uma oportunidade de aprender e evoluir. Disponível para colaborações e projetos freelance.
+</p>
+
+falar comigo →
+
+.section__tag
+habilidades
+<span class="skill-name">HTML & CSS</span>
+<div class="skill-sub">em desenvolvimento</div>
+<span class="skill-name">JavaScript</span>
+<span class="skill-pct">40%</span>
+<div class="skill-sub">aprendendo</div>
+<span class="skill-name">Design Responsivo</span>
+<span class="skill-pct">55%</span>
+<div class="skill-sub">em desenvolvimento</div>
+<span class="skill-name">Git & GitHub</span>
+<span class="skill-pct">30%</span>
+<div class="skill-sub">iniciando</div>
+
+.projets 
+Projetos
+<span class="projects-note">// em breve</span>
+01 /
+em breve
+Projeto 01
+Descrição será adicionada em breve.
+(3x)
+<span class="tag">html</span>
+<span class="tag">css</span>
+
+————— Contact —————
+.contact
+contato 
+<h2>Vamos trabalhar juntos?</h2>
+<p>
+    Estou aberto a projetos freelance, colaborações e oportunidades. Manda uma mensagem!
+</p>
+.contact__link 
+e-mail
+→
+GitHub
+→
+Linkedin
+→
+
+.footer
+© 2026
+<span class="accent">Deibi Andrés</span>
+<span>built with HTML · CSS · JS</span>
