@@ -8,6 +8,15 @@
 #project
 #contact
 
+    <!--Close-->
+    <button class="nav__close">
+        <a href=""><i class="ri-close-large-fill"></i></a>
+    </button>
+    <!--Toggle-->
+    <button class="nav__toggle">
+    <a href=""><i class="ri-apps-2-fill"></i></a>
+    </button>
+
 .nav__btn
 disponível ✦
 
