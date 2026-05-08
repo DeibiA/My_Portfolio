@@ -118,3 +118,157 @@ Linkedin
 © 2026
 <span class="accent">Deibi Andrés</span>
 <span>built with HTML · CSS · JS</span>
+
+
+
+<!--======================================-->
+
+.header {
+  width: 100%;
+  border-bottom: solid 1px var(--border-d);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(10,10,10,0.92);
+  z-index: 100;
+  transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.nav {
+  position: relative;
+  height: 4.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav__logo .first__name {
+  color: var(--white);
+  font-family:var(--mono);
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+}
+
+.nav__logo .last__name {
+  letter-spacing: 0.36em;
+  font-family: 'Neue Montreal', var(--switzer);
+  color: var(--muted2);
+  font-size: 1rem;
+}
+
+.nav__menu .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.nav__link {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none; color: var(--muted2);
+  transition: color 0.4s;
+  padding: 1rem 2.5rem;
+}
+
+.nav__link::before {
+  content: './';
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.4ss;
+  margin-right: 2px;
+}
+
+.nav__link:hover:before { 
+  opacity: 1;
+  color: var(--accent);
+}
+
+.nav__menu .nav__close, .nav__toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+ color: var(--white);
+}
+
+.nav__toggle {
+  display: block;
+}
+.nav__toggle a {
+  color: var(--white);
+}
+
+.nav .nav__available {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  background: var(--accent);
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.4s, color 0.4s;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 3.5rem;
+}
+.nav .nav__available a {
+  color: var(--dark);
+}
+
+.nav .nav__available:hover {
+  background-color: var(--accent2);
+}
+
+
+/* Navigation for mobile devices */
+@media(width <= 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 300px;
+    background-color: var(--white);
+    height: 100%;
+    box-shadow: -8px 0 16px hsl(0, 0%, 4%);
+    padding: 7rem 0 2rem 2rem;
+    z-index: 100;
+    transition: right 0.4s;
+  }
+
+  .nav__link {
+    font-family: var(--syne);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dark3);
+    transition: color 0.4s;
+  }
+
+  .nav__link:hover {
+    color: var(--muted2);
+  }
+  
+  .nav__link:hover:before { 
+    opacity: 0;
+    
+}
+
+}
+
+
+/* Navigation for mobile devices <> */
+
+.show-menu {
+  
+  right: 0;
+}
