@@ -1,17 +1,15 @@
 const navMenu = document.getElementById("nav-menu"),
     btnToggle = document.getElementById("btn-toggle"),
-    bntClose = document.getElementById("btn-close");
+    btnClose = document.getElementById("btn-close");
 
 if (btnToggle) {
-    btnToggle.addEventListener('click', (e) => {
-        e.preventDefault()
+    btnToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     });
 }
 
-if(bntClose) {
-    bntClose.addEventListener('click', (e) => {
-       e.preventDefault()
+if(btnClose) {
+    btnClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     });
 }
@@ -19,11 +17,8 @@ if(bntClose) {
 
 const navLink = document.querySelectorAll('.nav__link');
 
-navLink.forEach((link) => {
-    link.addEventListener(("click"), () => {
+navLink.forEach( (link) => {
+    link.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
-        console.log("oi");
     });
-    
-    
 });
