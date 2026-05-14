@@ -32,19 +32,23 @@ body {
 
 /* ── CURSOR ── */
 .cursor {
-  width: 8px; height: 8px;
+  width: 8px;
+  height: 8px;
   background: var(--accent);
   border-radius: 50%;
-  position: fixed; z-index: 9999;
+  position: fixed;
+  z-index: 9999;
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
 }
 .cursor-ring {
-  width: 32px; height: 32px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(232,255,71,0.4);
   border-radius: 50%;
-  position: fixed; z-index: 9998;
+  position: fixed;
+  z-index: 9998;
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.15s ease, width 0.3s, height 0.3s;
@@ -52,10 +56,16 @@ body {
 
 /* ── NAV ── */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: grid; grid-template-columns: 1fr auto 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 0 3rem; height: 68px;
+  padding: 0 3rem;
+  height: 68px;
   background: #0a0a0aeb;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-d);
@@ -63,7 +73,10 @@ nav {
 
 .nav-logo {
   grid-column: 1;
-  display: flex; flex-direction: column; line-height: 1; gap: 2px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 2px;
 }
 .nav-logo .first {
   font-family: 'Neue Montreal', var(--switzer);
@@ -81,6 +94,7 @@ nav {
   grid-column: 2;
   display: flex; gap: 2.5rem; justify-content: center;
 }
+
 .nav-links a {
   font-family: var(--mono);
   font-size: 0.65rem; font-weight: 300;
@@ -89,12 +103,14 @@ nav {
   transition: color 0.2s;
   position: relative;
 }
+
 .nav-links a::before {
   content: './';
   color: var(--accent); opacity: 0;
   transition: opacity 0.2s;
   margin-right: 2px;
 }
+
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::before { opacity: 1; }
 
@@ -110,6 +126,7 @@ nav {
   transition: background 0.2s, color 0.2s;
   display: inline-flex; align-items: center; gap: 0.5rem;
 }
+
 .btn-contact:hover { background: var(--accent2); }
 
 /* ── HERO ── */
@@ -493,24 +510,24 @@ footer .accent { color: var(--accent); }
 
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">
-    <span class="first">Deibi</span>
-    <span class="last">Andrés</span>
-  </div>
-  <div class="nav-links">
-    <a href="#sobre">sobre</a>
-    <a href="#projetos">projetos</a>
-    <a href="#contato">contato</a>
-  </div>
-  <div class="nav-btn">
-    <a href="#contato" class="btn-contact">disponível ✦</a>
-  </div>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <span class="first">Deibi</span>
+      <span class="last">Andrés</span>
+    </div>
+    <div class="nav-links">
+      <a href="#sobre">sobre</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </div>
+    <div class="nav-btn">
+      <a href="#contato" class="btn-contact">disponível ✦</a>
+    </div>
+  </nav>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
