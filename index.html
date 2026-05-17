@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@400;700;800&family=Switzer:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!--//// Icons \\\\-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
@@ -22,6 +22,12 @@
             </a>
 
             <div class="nav__menu" id="nav-menu">
+
+                <!-- Btn close — só aparece no mobile, dentro do drawer -->
+                <button class="nav__close" id="btn-close">
+                    <i class="ri-close-large-fill"></i>
+                </button>
+
                 <ul class="nav__list">
                     <li>
                         <a href="#about" class="nav__link">About</a>
@@ -34,23 +40,17 @@
                     <li>
                         <a href="#contact" class="nav__link">Contacts</a>
                     </li>
-
                 </ul>
-                <!--Close-->
-                <button class="nav__close " id="btn-close">
-                    <a href="#"><i class="ri-close-large-fill"></i></a>
-                </button>
+                <a href="#contact" class="nav__available-mobile">Available ✦</a>
             </div>
-            <li class="nav__available">
-                <a href="#contact">Available ✦</a>
-            </li>
 
-                <!--Toggle-->
+            <!-- Available — só aparece no mobile, dentro do drawer -->
+            <a href="#contact" class="nav__available">Available ✦</a>
+
+                <!--Toggle — só no mobile, à direita-->
             <button class="nav__toggle" id="btn-toggle">
-                <a href="#"><i class="ri-menu-unfold-3-fill"></i></i></a>
+                <a href="#"><i class="ri-menu-unfold-3-fill"></i></a>
             </button>
-
-
         </nav>
     </header>
 
