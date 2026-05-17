@@ -674,7 +674,7 @@ footer .accent { color: var(--accent); }
 </body>
 
 
-<script>
+
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
@@ -710,4 +710,3 @@ footer .accent { color: var(--accent); }
       ring.style.height   = '32px';
     });
   });
-</script>
