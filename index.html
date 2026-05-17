@@ -23,11 +23,6 @@
 
             <div class="nav__menu" id="nav-menu">
 
-                <!-- Btn close — só aparece no mobile, dentro do drawer -->
-                <button class="nav__close" id="btn-close">
-                    <i class="ri-close-large-fill"></i>
-                </button>
-
                 <ul class="nav__list">
                     <li>
                         <a href="#about" class="nav__link">About</a>
@@ -41,15 +36,17 @@
                         <a href="#contact" class="nav__link">Contacts</a>
                     </li>
                 </ul>
+
                 <a href="#contact" class="nav__available-mobile">Available ✦</a>
             </div>
 
-            <!-- Available — só aparece no mobile, dentro do drawer -->
+            <!-- Available — só aparece no mobile, dentro do side-bar -->
             <a href="#contact" class="nav__available">Available ✦</a>
 
-                <!--Toggle — só no mobile, à direita-->
-            <button class="nav__toggle" id="btn-toggle">
-                <a href="#"><i class="ri-menu-unfold-3-fill"></i></a>
+            <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </nav>
     </header>

@@ -1,24 +1,19 @@
-const navMenu = document.getElementById("nav-menu"),
-    btnToggle = document.getElementById("btn-toggle"),
-    btnClose = document.getElementById("btn-close");
+const navMenu = document.getElementById("nav-menu");
+const btnHamburge = document.getElementById("hamburger");
 
-if (btnToggle) {
-    btnToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
+if (btnHamburge) {
+    btnHamburge.addEventListener('click', () => {
+        btnHamburge.classList.toggle('show-menu');
+        navMenu.classList.toggle('show-menu');
     });
 }
 
-if(btnClose) {
-    btnClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    });
-}
-
-
-const navLink = document.querySelectorAll('.nav__link');
-
-navLink.forEach( (link) => {
+navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
+
+        btnHamburge.classList.toggle('show-menu');
+        navMenu.classList.toggle('show-menu');
+        console.log(link);
+        
     });
 });

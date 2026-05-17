@@ -154,19 +154,39 @@ a {
   display: none;
 }
 
-/* Toggle — escondido no desktop */
-.nav__toggle {
+/* Available mobile — escondido por padrão */
+.nav__available--mobile {
   display: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.4s;
 }
 
-/* Close e Available mobile — escondidos por padrão */
-.nav__close        { display: none; }
-.nav__available--mobile { display: none; }
+/* NAV MENU HAMBURGER */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 250;
+}
+.nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--white);
+  transition: all 0.3s ease;
 
+}
+.nav__hamburger.show-menu span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.nav__hamburger.show-menu span:nth-child(2) {
+  opacity: 0;
+}
+.nav__hamburger.show-menu span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
 
 /* ── MOBILE (abaixo de 1150px) ── */
 @media (width <= 1150px) {
@@ -178,11 +198,11 @@ a {
   }
 
   /* Mostra o toggle */
-  .nav__toggle {
+  .nav__hamburger{
     display: flex;
   }
 
-  /* Drawer — sai pela direita */
+  /* Side-bar — sai pela direita */
   .nav__menu {
     position: fixed;
     top: 0;
@@ -200,7 +220,7 @@ a {
     align-items: flex-start;
   }
 
-  /* Abre o drawer */
+  /* Abre o Side-bar */
   .nav__menu.show-menu {
     right: 0;
   }
@@ -221,18 +241,7 @@ a {
   }
   .nav__link:hover { color: var(--muted2); }
 
-  /* Close — canto superior direito do drawer */
-  .nav__close {
-    display: flex;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--white);
-    cursor: pointer;
-  }
-
-  /* Available — no final do drawer */
+  /* Available — Side-bar */
   .nav__available-mobile {
     display: inline-flex;
     font-family: var(--mono);
@@ -244,7 +253,9 @@ a {
     padding: 0.6rem 1.25rem;
     transition: background-color 0.4s;
   }
-  .nav__available--mobile:hover { background-color: var(--highlight2); }
+  .nav__available--mobile:hover {
+    background-color: var(--highlight2);
+  }
 }
 
 
@@ -252,9 +263,15 @@ a {
 @media (width >= 1150px) {
   .container { margin-inline: auto; }
 
-  .nav__toggle { display: none; }
-  .nav__close  { display: none; }
-  .nav__available--mobile { display: none; }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__close  {
+    display: none;
+  }
+  .nav__available--mobile { 
+    display: none;
+  }
 
   /* Menu volta ao fluxo normal */
   .nav__menu {
@@ -329,7 +346,7 @@ a {
 .hero__name .line1 {
   display: block;
   font-family: var(--syne);
-  font-size: clamp(5rem, 14vw, 13rem);
+  font-size: clamp(3.5rem, 13.5vw, 10.5rem);/* Minimo, Ideal, Máximo */
   font-weight: 800;
   line-height: 0.88;
   letter-spacing: -0.04em;
@@ -341,7 +358,7 @@ a {
 .hero__name .line2 {
   display: block;
   font-family: var(--syne);
-  font-size: clamp(5rem, 14vw, 13rem);
+  font-size: clamp(3.5rem, 13.5vw, 10.5rem);
   text-transform: uppercase;
   font-weight: 800;
   line-height: 0.88;
@@ -419,12 +436,11 @@ a {
 
 .status__bar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border-top: solid 1px var(--muted2);
   border-bottom: solid 1px var(--muted2);
-  padding: 0.75rem 0;
+  padding: 0.75rem 5px;
   flex-wrap: nowrap;
 }
 
@@ -445,7 +461,30 @@ a {
   font-family: var(--switzer);
 }
 
+.status__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--highlight);
+  animation: pulse 2s ease infinite;
+  display: inline-block;
+}
+
 .main {
   width: 100%;
   height: 100vw;
+}
+
+
+/* ANIMAÇÕES */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+@keyframes scrollLine {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
 }
