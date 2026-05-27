@@ -572,6 +572,7 @@ footer .accent { color: var(--accent); }
     <p>Cada projeto é uma oportunidade de aprender e evoluir. Disponível para colaborações e projetos freelance.</p>
     <a href="#contato" style="display:inline-flex;align-items:center;gap:.6rem;margin-top:2.5rem;font-family:var(--mono);font-size:.7rem;font-weight:300;letter-spacing:.08em;text-decoration:none;color:var(--accent);border-bottom:1px solid rgba(232,255,71,.3);padding-bottom:.25rem;">falar comigo →</a>
   </div>
+  
   <div class="about-right">
     <div class="section-tag">habilidades</div>
     <div class="skill-block">
