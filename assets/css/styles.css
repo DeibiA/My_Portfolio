@@ -287,6 +287,12 @@ a {
     box-shadow: none;
     flex-direction: row;
   }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--muted2);
+  }
   
 }
 
@@ -450,7 +456,7 @@ a {
   display: flex; 
   align-items: center; 
   gap: 0.6rem;
-  padding: 0.85rem 0;
+  padding: 0.85rem;
   border-bottom: 1px solid var(--border-d);
 }
 .status__item:last-child {
@@ -475,10 +481,6 @@ a {
 }
 
 
-.about {
-  width: 100%;
-  height: 100vw;
-}
 .about__me {
   font-family: var(--mono);
   font-size:var(--smaller-font-size);
@@ -504,11 +506,13 @@ a {
   color: var(--muted2);
   margin-bottom: 1rem;
 }
+.about__cta {
+  margin-top: 2rem;
+}
 
 .about__right {
   background-color: var(--white);
-  margin: 2rem 0;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .about__right-skill {
@@ -524,6 +528,8 @@ a {
   font-weight: 700;
   letter-spacing: 0.02rem;
   margin-top: 2rem;
+}
+.skill__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -552,6 +558,49 @@ a {
   letter-spacing: 0.02rem;
 }
 
+/* ==== PROJECTS SECTION ==== */
+.projects {
+  
+}
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+.projects__text {
+  font-family: var(--syne);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.projects__header span {
+  font-size: var(--smaller-font-size);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--muted2);
+}
+.projects__num {
+  font-family: var(--mono);
+  font-size: var(--smaller-font-size);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--muted2);
+}
+.project__card {
+  height: 140px;
+  border: solid red;
+  background-color: var(--dark3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__card span {
+  font-family: var(--mono);
+  font-size: var(--smaller-font-size);
+  letter-spacing: 0.1rem;
+  color: var(--muted2);
+}
 /* ANIMAÇÕES */
 @keyframes pulse {
   0%, 100% { opacity: 1; }

@@ -367,7 +367,8 @@ nav {
   border-bottom: 1px solid var(--border-d);
 }
 .projects-head {
-  display: flex; justify-content: space-between; align-items: flex-end;
+  display: flex; justify-content:
+  space-between; align-items: flex-end;
   margin-bottom: 4rem;
 }
 .projects-head h2 {
