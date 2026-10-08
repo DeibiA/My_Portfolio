@@ -81,7 +81,8 @@ a {
   transition: background-color 0.4s, box-shadow 0.4s;
 }
 
-/* ── NAV BASE ── */
+
+/* ==== NAV SECTION ==== */
 .nav {
   display: flex;
   align-items: center;
@@ -131,7 +132,7 @@ a {
   opacity: 1;
 }
 
-/* 3 — Available desktop (direita) */
+/* --— Available desktop (direita) --- */
 .nav__available,
 .nav__available-mobile {
   font-family: var(--mono);
@@ -153,12 +154,12 @@ a {
   display: none;
 }
 
-/* Available mobile — escondido por padrão */
+/* --- Available mobile — escondido por padrão --- */
 .nav__available--mobile {
   display: none;
 }
 
-/* NAV MENU HAMBURGER */
+/* --- NAV MENU HAMBURGER --- */
 .nav__hamburger {
   display: none;
   flex-direction: column;
@@ -193,7 +194,7 @@ a {
   position: relative;
 }
 
-/* Grid background */
+/* --- Grid background --- */
 .hero::before {
   content: '';
   position: absolute;
@@ -268,7 +269,6 @@ a {
   animation: fadeUp 0.6s 0.1s ease both;
 }
 .hero__bottom {
-
   margin-top: 3rem;
   padding-top: 2rem;
   animation: fadeUp 0.6s 0.25s ease both;
@@ -306,6 +306,7 @@ a {
   max-width: 380px;
   margin-bottom: 2rem;
 }
+/* ---Buttons --- */
 .hero__cta,
 .about__cta {
   display: inline-flex;
@@ -347,7 +348,8 @@ a {
   border-bottom: none; 
 }
 .status__dot {
-  width: 5px; height: 5px;
+  width: 5px;
+  height: 5px;
   flex-shrink: 0;
   border-radius: 50%;
   background: var(--highlight);
@@ -396,7 +398,7 @@ a {
 }
 
 .about__right {
-  background-color: var(--white);
+  background-color: var(--white); 
 }
 
 .about__right-skill {
